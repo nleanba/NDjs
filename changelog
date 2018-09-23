@@ -1,0 +1,5 @@
+### Version 1.0.0-beta.1
+
+2018/09/23 21:00:59
+
+ * Changes to provide a window with a document for jQuery to work in Node.js
