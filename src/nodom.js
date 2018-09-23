@@ -243,10 +243,15 @@ function appendElement (hander,node) {
     }
 }//appendChild and setAttributeNS are preformance key
 
+function window(dom) {
+    return {document: dom, setTimeout: function () {}, location: function () {}};
+}
+
 //if(typeof require == 'function'){
 var htmlEntity = require('./entities');
 var XMLReader = require('./sax').XMLReader;
 var DOMImplementation = exports.DOMImplementation = require('./dom').DOMImplementation;
 exports.XMLSerializer = require('./dom').XMLSerializer ;
 exports.DOMParser = DOMParser;
+exports.window = window;
 //}

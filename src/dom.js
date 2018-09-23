@@ -298,7 +298,17 @@ DOMImplementation.prototype = {
 		//  readonly attribute NamedNodeMap     entities;
 		//  readonly attribute NamedNodeMap     notations;
 		return node;
-	}
+	},
+	// Interface HTMLDOMImplementation (introduced in DOM Level 2)
+    createHTMLDocument: function (title) {
+        var doc = new Document();
+        doc.implementation = this;
+        doc.childNodes = new NodeList();
+        doc.body = {
+        	childNodes: new NodeList()
+        };
+        return doc;
+    }
 };
 
 
