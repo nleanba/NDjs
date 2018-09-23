@@ -1,6 +1,6 @@
 {
-  "name": "nodom",
-  "version": "1.0.0-beta.1",
+  "name": "noddom",
+  "version": "1.0.0-beta.2",
   "description": "A JavaScript implementation of W3C DOM for Node.js",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LTTPP/Nodom.git"
+    "url": "https://github.com/LTTPP/Noddom.git"
   },
   "keywords": [
     "W3C",
