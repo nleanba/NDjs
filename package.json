@@ -4,7 +4,7 @@
   "description": "A JavaScript implementation of W3C DOM for Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/noddom_test.js"
   },
   "repository": {
     "type": "git",
