@@ -1,5 +1,3 @@
 'use strict';
 
-module.exports = function () {
-    process.stdout.write('Nodom');
-};
+module.exports = require('./src/nodom');
