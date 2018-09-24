@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./src/noddom');
+module.exports = require('./src/nd');

@@ -1,14 +1,14 @@
 {
-  "name": "noddom",
-  "version": "1.0.0-beta.1",
+  "name": "ndjs",
+  "version": "1.0.0-beta.2",
   "description": "A JavaScript implementation of W3C DOM for Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "node test/noddom_test.js"
+    "test": "node test/nd_test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LTTPP/Noddom.git"
+    "url": "https://github.com/LTTPP/NDjs.git"
   },
   "keywords": [
     "W3C",
