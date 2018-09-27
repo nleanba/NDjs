@@ -4,7 +4,8 @@
   "description": "A JavaScript implementation of W3C DOM for Node.js",
   "main": "index.js",
   "scripts": {
-    "test": "node test/nd_test.js"
+    "test": "node test/nd_test.js",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
     "jQuery"
   ],
   "author": "Jianwei Liu <liujianwei.me@gmail.com> (https://liujianwei.tech/)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  }
 }
