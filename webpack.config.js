@@ -1,17 +1,27 @@
-var path = require('path');
 var webpack = require('webpack');
+var UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+var banner = require('./webpack.banner');
 
 module.exports = {
-    entry: './src/nd.js',
+    entry: {
+        'nd': './src/nd.js',
+        'nd.min': './src/nd.js'
+    },
+    devtool: 'source-map',
     mode: 'production',
     optimization: {
-        minimize: false
+        minimize: true,
+        minimizer: [new UglifyJsPlugin({
+            include: /\.min\.js$/,
+            sourceMap: true
+        })]
     },
     output: {
-        pathinfo: true,
+        //pathinfo: true,
         library: 'ndjs',
         libraryTarget: 'umd',
-        filename: 'nd.js',
+        globalObject: 'typeof self !== \'undefined\' ? self : this',
+        filename: '[name].js',
         auxiliaryComment: {
             root: 'Browser - root is window',
             commonjs: 'Node - Does not work with strict CommonJS, but only CommonJS-like environments that support module.exports, like Node.',
@@ -20,16 +30,8 @@ module.exports = {
         }
     },
     plugins: [
-        new webpack.BannerPlugin('nd.js\n' +
-            'https://github.com/LTTPP/NDjs\n' +
-            '\n' +
-            'NDjs is A JavaScript implementation of W3C DOM for Node.js.\n' +
-            'It supports DOMParser and XMLSerializer interface such as in browser,\n' +
-            'it can also provide a window with a document for jQuery to work in Node.js.\n' +
-            '\n' +
-            '@version 1.0.0-beta.2\n' +
-            '@date    2018-09-27\n' +
-            '\n' +
-            '@license MIT')
+        new webpack.BannerPlugin({
+            banner: banner
+        })
     ]
 };
