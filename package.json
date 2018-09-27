@@ -1,6 +1,6 @@
 {
   "name": "ndjs",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.3",
   "description": "A JavaScript implementation of W3C DOM for Node.js",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
   "author": "Jianwei Liu <liujianwei.me@gmail.com> (https://liujianwei.tech/)",
   "license": "MIT",
   "devDependencies": {
+    "dateformat": "^3.0.3",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1"
   }

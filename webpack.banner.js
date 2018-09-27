@@ -1,5 +1,9 @@
 var package = require('./package.json');
 var version = package.version;
+
+var dateFormat = require('dateformat');
+var timestamp = dateFormat(Date.now(), 'yyyy-mm-dd');
+
 module.exports = 'nd.js\n' +
     'https://github.com/LTTPP/NDjs\n' +
     '\n' +
@@ -8,6 +12,6 @@ module.exports = 'nd.js\n' +
     'it can also provide a window with a document for jQuery to work in Node.js.\n' +
     '\n' +
     '@version ' + version + '\n' +
-    '@date    2018-09-27\n' +
+    '@date    ' + timestamp + '\n' +
     '\n' +
     '@license MIT';
