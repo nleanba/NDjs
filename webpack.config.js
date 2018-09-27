@@ -17,10 +17,9 @@ module.exports = {
         })]
     },
     output: {
-        //pathinfo: true,
         library: 'ndjs',
         libraryTarget: 'umd',
-        globalObject: 'typeof self !== \'undefined\' ? self : this',
+        globalObject: 'this',
         filename: '[name].js',
         auxiliaryComment: {
             root: 'Browser - root is window',
