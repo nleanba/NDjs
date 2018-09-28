@@ -248,6 +248,7 @@ function window(dom) {
 }
 
 //if(typeof require == 'function'){
+var console = require('./log');
 var htmlEntity = require('./entities');
 var XMLReader = require('./sax').XMLReader;
 var DOMImplementation = exports.DOMImplementation = require('./dom').DOMImplementation;

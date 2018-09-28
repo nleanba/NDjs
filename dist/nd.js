@@ -1621,8 +1621,9 @@ function window(dom) {
 }
 
 //if(typeof require == 'function'){
-var htmlEntity = __webpack_require__(2);
-var XMLReader = __webpack_require__(3).XMLReader;
+var console = __webpack_require__(2);
+var htmlEntity = __webpack_require__(3);
+var XMLReader = __webpack_require__(4).XMLReader;
 var DOMImplementation = exports.DOMImplementation = __webpack_require__(0).DOMImplementation;
 exports.XMLSerializer = __webpack_require__(0).XMLSerializer ;
 exports.DOMParser = DOMParser;
@@ -1632,6 +1633,27 @@ exports.window = window;
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+var logger;
+
+if (typeof console === 'object' && console) {
+    logger = console;
+} else {
+    logger = {
+        log: nop,
+        debug: nop,
+        warn: nop,
+        error: nop
+    }
+}
+
+function nop() {}
+
+module.exports = logger;
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports) {
 
 exports.entityMap = {
@@ -1880,7 +1902,7 @@ exports.entityMap = {
 //for(var  n in exports.entityMap){console.log(exports.entityMap[n].charCodeAt())}
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 //[4]   	NameStartChar	   ::=   	":" | [A-Z] | "_" | [a-z] | [#xC0-#xD6] | [#xD8-#xF6] | [#xF8-#x2FF] | [#x370-#x37D] | [#x37F-#x1FFF] | [#x200C-#x200D] | [#x2070-#x218F] | [#x2C00-#x2FEF] | [#x3001-#xD7FF] | [#xF900-#xFDCF] | [#xFDF0-#xFFFD] | [#x10000-#xEFFFF]
