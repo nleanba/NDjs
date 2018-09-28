@@ -1,6 +1,6 @@
 {
   "name": "ndjs",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "A JavaScript implementation of W3C DOM for Node.js",
   "main": "index.js",
   "scripts": {

@@ -6,7 +6,7 @@
  * It supports DOMParser and XMLSerializer interface such as in browser,
  * it can also provide a window with a document for jQuery to work in Node.js.
  * 
- * @version 1.0.0-beta.3
+ * @version 1.0.0-beta.4
  * @date    2018-09-28
  * 
  * @license MIT
