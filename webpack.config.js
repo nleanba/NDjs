@@ -22,7 +22,7 @@ module.exports = {
         globalObject: 'this',
         filename: '[name].js',
         auxiliaryComment: {
-            root: 'Browser - root is window',
+            root: 'This globals - root is bound to this not window',
             commonjs: 'Node - Does not work with strict CommonJS, but only CommonJS-like environments that support module.exports, like Node.',
             commonjs2: 'CommonJS - Defines a strict CommonJS.',
             amd: 'AMD - Register as an anonymous module.'

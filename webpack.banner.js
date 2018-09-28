@@ -1,8 +1,8 @@
 var package = require('./package.json');
 var version = package.version;
 
-var dateFormat = require('dateformat');
-var timestamp = dateFormat(Date.now(), 'yyyy-mm-dd');
+var dayjs = require('dayjs');
+var timestamp = dayjs().format('YYYY-MM-DD');
 
 module.exports = 'nd.js\n' +
     'https://github.com/LTTPP/NDjs\n' +

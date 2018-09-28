@@ -19,7 +19,7 @@
   "author": "Jianwei Liu <liujianwei.me@gmail.com> (https://liujianwei.tech/)",
   "license": "MIT",
   "devDependencies": {
-    "dateformat": "^3.0.3",
+    "dayjs": "^1.7.7",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1"
   }
