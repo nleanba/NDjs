@@ -30,11 +30,10 @@ var window = ndjs.window(dom);
 ### AMD
 
 ```JavaScript
-define(['jquery'], function(jq){
-    ...
-    var window = ...; // use some window and dom mockup tool, like Noddom, jsdom etc.
-    var $ = jq(window);
-    ...
+define(['ndjs'], function(ndjs){
+    var html = '<html><body>NDjs</body></html>';
+    var dom = new ndjs.DOMParser().parseFromString(html);
+    var window = ndjs.window(dom);
 });
 ```
 
@@ -44,4 +43,4 @@ define(['jquery'], function(jq){
 
 ## License
 
-jquery-amd is released under the [MIT license](http://www.opensource.org/licenses/MIT).
+NDjs is released under the [MIT license](http://www.opensource.org/licenses/MIT).
