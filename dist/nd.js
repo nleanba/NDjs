@@ -6,7 +6,7 @@
  * It supports DOMParser and XMLSerializer interface such as in browser,
  * it can also provide a window with a document for jQuery to work in Node.js.
  * 
- * @version 1.0.0
+ * @version 1.0.1
  * @date    2018-10-06
  * 
  * @license MIT
@@ -844,7 +844,7 @@ Element.prototype = {
 	},
 	getAttribute : function(name){
 		var attr = this.getAttributeNode(name);
-		return attr && attr.value || null;
+		return attr && attr.value;
 	},
 	getAttributeNode : function(name){
 		return this.attributes.getNamedItem(name);
