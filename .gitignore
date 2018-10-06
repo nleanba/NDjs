@@ -1,3 +1,8 @@
+
+dist
+yarn.lock
+package.lock
+
 #################
 # JetBrains IDEs
 #################
