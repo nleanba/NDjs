@@ -1,22 +1,23 @@
 {
-  "name": "ndjs",
-  "version": "1.0.0-beta.4",
+  "name": "@nleanba/ndjs",
+  "version": "1.0.0",
   "description": "A JavaScript implementation of W3C DOM for Node.js",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "test": "node test/nd_test.js",
     "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LTTPP/NDjs.git"
+    "url": "https://github.com/nleanba/NDjs.git"
   },
   "keywords": [
     "W3C",
     "DOM",
     "jQuery"
   ],
-  "author": "Jianwei Liu <liujianwei.me@gmail.com> (https://liujianwei.tech/)",
+  "author": "Noam Bachmann",
   "license": "MIT",
   "devDependencies": {
     "dayjs": "^1.7.7",
